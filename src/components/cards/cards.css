@@ -1,0 +1,42 @@
+.cards {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+}
+.cards h2 {
+    margin: 0;
+    padding: 0;
+}
+.main-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.main-card p {
+    margin: 30px;
+}
+.main-info {
+display: flex;
+flex-direction: column;
+text-align: center;
+margin: 30px;
+}
+.main-info p {
+    margin: 0;
+    padding: 0;
+}
+.other-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.other  {
+ margin: 20px;
+}

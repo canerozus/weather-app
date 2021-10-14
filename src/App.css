@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+html, body, #root, .App {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #root {
+    background-image: linear-gradient( #13d4a2, #1634ae);
+  }
+
+  .App{
+      display: flex;
+      width: 100%;
+      min-height: 100%;
+      flex-direction: column;
+      
+  }
+
