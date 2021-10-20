@@ -4,10 +4,9 @@ import axios from 'axios';
 
 export const getWeather = createAsyncThunk(
     'getWeather',
-    async (payload = 'london', { rejectWithValue }) => {
+    async (payload = 'bandirma', { rejectWithValue }) => {
         try {
             const data = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${payload}&units=metric&appid=${process.env.REACT_APP_WEATHER_API_KEY}`)
-            console.log(data)
             return data;
         } catch (error) {
             if (!error?.response) {

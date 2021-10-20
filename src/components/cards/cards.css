@@ -10,37 +10,32 @@
     color: white;
 }
   h2 {
-    font-size: 5vh;
+    font-size: 7vh;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 .main-card {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
+    font-size: 4vh;
     
 }
 .main-card p {
-    margin: 30px;
+    margin: auto;
 }
+
 .main-info {
 display: flex;
 flex-direction: column;
 text-align: center;
-margin: 30px;
+margin-right: 10px;
 }
 .main-info p {
     margin: 0;
-    padding: 0;
+    padding: 0 ;
+    font-size: 3vh;
     text-transform:capitalize;
 }
 
-.other-cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.other  {
- margin: 20px;
-}

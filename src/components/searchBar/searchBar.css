@@ -4,5 +4,24 @@
     align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     min-height: 30%;
-    width: 100%;
+    
+}
+.btn-outline-success{ 
+ color: white;
+ border:solid white;
+
+ 
+}
+.btn-outline-success:hover{
+    color: #13ABA5;
+    border: solid white;
+    background-color: white;
+
+}
+.btn-outline-success,
+.btn-outline-success:active,
+.btn-outline-success:focus
+{
+    outline: 0;
+    box-shadow: none!important;
 }

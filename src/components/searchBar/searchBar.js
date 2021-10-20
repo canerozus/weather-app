@@ -8,22 +8,23 @@ function SearchBar() {
 
     const onSubmit = (e) => {
         e.preventDefault();
-        dispatch(getWeather(searchValue))
+        !searchValue ? dispatch(getWeather()) : dispatch(getWeather(searchValue))
+        setSearchValue('');
+
     }
 
     return (
         <div className="search">
-            <form className="search-form" onSubmit={onSubmit}>
-                <input
-                    type="text"
-                    id="header-search"
-                    placeholder="Search for City"
-                    name="s"
-                    onChange= {(e) => setSearchValue(e.target.value)}
-                    value={searchValue}
-                />
-                <button type="submit" >Search</button>
-            </form>
+        <form className="d-flex" onSubmit={onSubmit}>
+            <input onChange= {(e) => setSearchValue(e.target.value)}
+                value={searchValue}
+                type="text"
+                placeholder="Search for City" 
+                className="searchbar form-control me-2" 
+                type="search" 
+                aria-label="Search" />
+            <button className="btn btn-outline-success" type="submit">Search</button>
+        </form>
         </div>
     )
 }
