@@ -9,9 +9,11 @@
     width: 100%;
     color: white;
 }
-.cards h2 {
+  h2 {
+    font-size: 5vh;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 .main-card {
     display: flex;
@@ -31,7 +33,9 @@ margin: 30px;
 .main-info p {
     margin: 0;
     padding: 0;
+    text-transform:capitalize;
 }
+
 .other-cards {
     display: flex;
     justify-content: center;
