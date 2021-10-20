@@ -17,7 +17,7 @@ function Cards() {
 
 
     return (
-        <div>
+        <div className="loading data please wait">
             {loading ? 'loading' : <div className="cards">
                 <h2>{weather?.data.name},{weather?.data.sys.country}</h2>
                 <div className="main-card">
