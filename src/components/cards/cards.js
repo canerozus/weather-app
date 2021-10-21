@@ -5,7 +5,7 @@ import { getWeather } from '../../store/weatherSlice';
 import "./cards.css"
 function Cards() {
     const state = useSelector(state => state);
-    const { weather, loading, error } = state;
+    const { weather, loading} = state;
     console.log(weather)
     const dispatch = useDispatch();
     const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][new Date().getDay()]

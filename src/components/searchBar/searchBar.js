@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import React, {  useState } from 'react'
+import {  useDispatch } from 'react-redux'
 import { getWeather } from '../../store/weatherSlice';
 import './searchBar.css'
 function SearchBar() {
