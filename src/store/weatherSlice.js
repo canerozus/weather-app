@@ -6,7 +6,7 @@ export const getWeather = createAsyncThunk(
     'getWeather',
     async (payload = 'bandirma', { rejectWithValue }) => {
         try {
-            const data = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${payload}&units=metric&appid=${process.env.REACT_APP_WEATHER_API_KEY}`)
+            const data = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${payload}&units=metric&appid=c3318f8568d026b587075aa477b49b1b`)
             return data;
         } catch (error) {
             if (!error?.response) {
