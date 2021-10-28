@@ -7,9 +7,7 @@ function Cards() {
     const state = useSelector(state => state);
     const weather = useSelector(state => state.weather)
     const { loading } = state;
-    console.log(weather)
     const dispatch = useDispatch();
-    const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][new Date().getDay()];
 
     const epochToDay = (dayEpoch) => {
         const d = new Date(dayEpoch).getUTCDay();
