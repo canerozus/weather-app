@@ -23,25 +23,54 @@
 }
 .main-card {
     display: flex;
-    justify-content: start;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    font-size: 4vh;
+    font-size: 3.5vh;
+    width: 100%;
     
 }
-.main-card p {
-    margin: auto;
+.main-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-one p { 
+    font-size: 5vh; 
+    text-align: center;
+    padding-right: 3vh;
+    margin: 0;
+}
+.main-one img {
+    margin-left: 3vh;
+}
+
+.main-two p { 
+    margin-bottom: 20;
 }
 
 .main-info {
 display: flex;
 flex-direction: column;
 text-align: center;
-margin-right: 10px;
+margin: 3vh 3vh 0 3vh;
+
 }
-.main-info p {
-    margin: 0;
-    padding: 0 ;
-    font-size: 3vh;
-    text-transform:capitalize;
+
+.other-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vh;
+}
+
+.other  {
+ padding: 4vh 4vh 0 4vh;
+ text-align: center;
+}
+.other p {
+    font-size: 4vh;
 }
 
