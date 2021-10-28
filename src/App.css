@@ -7,11 +7,12 @@ html, body, #root, .App {
     padding: 0;
     margin: 0;
     
+    
   }
 
   #root {
     background-image: linear-gradient(  rgba(58,218,211,1), rgba(235,134,25,1) );
-    
+    padding: 5px;
   }
 
   .App{
