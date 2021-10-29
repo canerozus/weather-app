@@ -6,7 +6,7 @@ export const getWeather = createAsyncThunk(
     'getWeather',
     async (payload = 'bandirma', { rejectWithValue }) => {
         try {
-            const data = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=9dda9ac755644b2ebfe193312212710&q=${payload}&days=5&aqi=no&alerts=no`)
+            const data = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_KEY}&q=${payload}&days=5&aqi=no&alerts=no`)
             
             return data;
         } catch (error) {
