@@ -17,7 +17,6 @@ export const getWeather = createAsyncThunk(
         }
     }
 )
-
 const weatherSlice = createSlice({
     name: 'weather',
     initialState: { loading: false},
