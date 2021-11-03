@@ -14,6 +14,7 @@ export const getWeather = createAsyncThunk(
                 throw error
             }
             return rejectWithValue(error?.response?.data)
+            
         }
     }
 )
